@@ -1,18 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">Auth-App</a>
+      <div class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a href="/permissions" class="nav-link">Permisos</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a href="/add" class="nav-link">Tipos de Permisos</a>
+        </li> -->
+      </div>
+    </nav>
+
+    <div class="container mt-3">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+  name: 'App'
 }
 </script>
 
